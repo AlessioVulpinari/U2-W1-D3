@@ -6,7 +6,6 @@
   min-width: 1000px;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   background-color: #fbf7e3;
   padding: 2rem 2rem;
   border-radius: 50px;
@@ -15,8 +14,7 @@
 }
 
 .imgContainer {
-  min-width: 450px;
-  min-height: 300px;
+  min-width: 50%;
 
   background-image: url(/assets/imgs/honey.jpg);
   background-repeat: no-repeat;
@@ -31,6 +29,7 @@
   flex-direction: column;
   gap: 20px;
   min-width: 50%;
+  padding-left: 20px;
 }
 
 .textContainer h2 {
@@ -38,7 +37,7 @@
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .flexibleContainer {
     flex-wrap: wrap;
   }
@@ -49,5 +48,6 @@
 
   .imgContainer {
     flex-grow: 1;
+    min-height: 100px;
   }
 }
