@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 2rem 2rem;
+}
+
 .flexibleContainer {
-  min-width: 1000px;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   background-color: #fbf7e3;
@@ -15,13 +19,13 @@
 
 .imgContainer {
   min-width: 50%;
+}
 
-  background-image: url(/assets/imgs/honey.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.imgContainer img {
+  width: 100%;
+  height: 100%;
 
-  flex-shrink: 0;
+  object-fit: cover;
 }
 
 .textContainer {
@@ -40,7 +44,7 @@
 @media screen and (max-width: 575px) {
   .flexibleContainer {
     flex-wrap: wrap;
-    min-height: 300px;
+    min-height: 600px;
   }
 
   .textContainer {
