@@ -3,7 +3,7 @@
 }
 
 .flexibleContainer {
-  width: 1000px;
+  min-width: 1000px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -15,8 +15,8 @@
 }
 
 .imgContainer {
-  width: 450px;
-  height: 300px;
+  min-width: 450px;
+  min-height: 300px;
 
   background-image: url(/assets/imgs/honey.jpg);
   background-repeat: no-repeat;
@@ -30,10 +30,24 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 450px;
+  min-width: 50%;
 }
 
 .textContainer h2 {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .flexibleContainer {
+    flex-wrap: wrap;
+  }
+
+  .textContainer {
+    order: -1;
+  }
+
+  .imgContainer {
+    flex-grow: 1;
+  }
 }
