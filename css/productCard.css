@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 180px;
+  border-radius: 60px;
+  overflow: hidden;
+  background-color: #fbf7e3;
+
+  margin: 2rem;
+}
+
+.imgContainer {
+  height: 60%;
+  background-image: url(/assets/imgs/honey.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cardDescription {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #97623e;
+}
+
+.cardDescription div span:first-of-type {
+  font-weight: bold;
+}
+
+.cardDescription div span:nth-of-type(2) {
+  font-size: 0.6rem;
+}
+
+.spanContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 50%;
+  color: #97623e;
+  font-size: 0.6rem;
+  padding: 0.5rem 1rem;
+
+  border-radius: 50px;
+  margin-inline: auto;
+
+  border: 0;
+  background-color: #f3df85;
+  margin-bottom: 0.8rem;
+}
