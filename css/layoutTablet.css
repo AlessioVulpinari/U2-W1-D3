@@ -30,13 +30,13 @@ nav ul {
 nav ul li {
   display: inline-block;
   background-color: #f3df85;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 50px;
   flex-shrink: 0;
 }
 
 nav ul li:nth-last-of-type(3) {
-  font-size: 2rem;
+  font-size: 1.8rem;
   vertical-align: middle;
 }
 
